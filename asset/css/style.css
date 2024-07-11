@@ -32,6 +32,26 @@ a {
 .btn:hover {
   opacity: 0.9;
 }
+
+.section-heading {
+  color: #10375c;
+  font-family: Sora;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.2; /* 120% */
+  letter-spacing: -1px;
+}
+
+.section-decs {
+  margin-top: 18px;
+  color: #575f66;
+  font-family: Sora;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.67; /* 166.667% */
+}
 /* ============ common ================ */
 .main-content {
   width: 1170px;
@@ -83,7 +103,7 @@ a {
   top: -3px;
 }
 .header__action--signup {
-  min-width: 144px;
+  min-width: 104px;
   font-family: Sora;
   font-size: 16px;
   font-style: normal;
@@ -161,4 +181,81 @@ a {
 .hero__img--small {
   width: 210px;
   height: 410px;
+}
+
+/* ================== Service ===================== */
+.service {
+  padding: 170px 0;
+  background: #fff;
+}
+.section-heading,
+.service__desc {
+  text-align: center;
+}
+.service__desc {
+  width: 468px;
+  margin: 0 auto;
+}
+.service__row {
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.service__img {
+  width: 570px;
+  height: 570px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+.service-item {
+  padding: 21px;
+  display: flex;
+  width: 470px;
+  border-radius: 10px;
+  background: #fff;
+  transition: 0.2s;
+}
+.service-item:hover {
+  position: relative;
+  box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.05);
+}
+
+.service-item:hover .service-item__icon {
+  background: #fff;
+  background: #2e80ce;
+}
+
+.service-item__icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  background: #eff6fd;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  margin-right: 19px;
+  transition: 0.2s;
+}
+.service-item__heading {
+  color: #10375c;
+  font-family: Sora;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.service-item__desc {
+  margin-top: 8px;
+  color: #575f66;
+  font-family: Sora;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.75; /* 175% */
+}
+.service__btn {
+  margin-top: 55px;
 }
